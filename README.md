@@ -1,6 +1,6 @@
 # Weatherman_App
 
-## Weather App Utilizing [Open Weather Map](https://openweathermap.org/)
+## Weather App Utilizing [Open Weather Map API](https://openweathermap.org/)
 
 ## License
 
