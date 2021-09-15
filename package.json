@@ -1,0 +1,25 @@
+{
+  "name": "Weatherman_App",
+  "version": "1.0.0",
+  "description": "## Weather App Utilizing [Open Weather Map](https://openweathermap.org/)",
+  "main": "main.js",
+  
+  "scripts": {
+    "dev": "NODE_ENV=development node --require dotenv/config main.mjs",
+    "type": "commonjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-Musa/Weatherman_App.git"
+  },
+  "keywords": [],
+  "author": "N-Musa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/N-Musa/Weatherman_App/issues"
+  },
+  "homepage": "https://github.com/N-Musa/Weatherman_App#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
