@@ -12,8 +12,8 @@ async function getForecast(city) {
   document.querySelector(".celsius").innerText = `${Math.round(
     weatherData.main.temp
   )}°C `;
-  //document.querySelector('.icon').innerText = weatherData[2]
-  //document.querySelector('.caption').innerText =
+  document.querySelector('.caption').innerText = `${weatherData.weather[0].description}`
+  document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
   document.querySelector(
     ".wind"
   ).innerText = `Wind Speed: ${weatherData.wind.speed}`;
