@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+     background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0.5rem;
+} 
+.weather_main{
+    margin: 1.75rem;
+    color: white;
+}
+.inner__container{
+    min-height: 580px;
+    min-width: 340px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 5px rgb(238, 238, 238);
+}
+
+.search_box{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.75rem;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 0.5em 0.75em;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 20px;
+    width: 70%;
+}
+i{
+    font-size: 1.8em;
+    padding-left: 3px;
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline-style: none;
+    background: inherit;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.fas{
+    color: white;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+.location, .celsius{
+    margin-top: 1.2rem;
+    text-transform: capitalize;
+}
+.celsius{
+    font-size: 5em;
+}
+.wind, .vis, .feel, .pressure, .humid{
+    padding-top: 10px;
+}
+span{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-weight: bolder;
+}
