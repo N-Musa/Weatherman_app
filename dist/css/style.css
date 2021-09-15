@@ -66,6 +66,7 @@ button{
     display: flex;
     align-items: center;
     margin-top: 0.75rem;
+    text-transform: capitalize;
 }
 .location, .celsius{
     margin-top: 1.2rem;
