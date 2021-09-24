@@ -1,10 +1,10 @@
 # Weatherman_App
 
-## Weather App Utilizing [Open Weather Map API](https://openweathermap.org/)
+#### Weather App Utilizing [Open Weather Map API](https://openweathermap.org/)
 
-## Screenshot 
+#### Screenshot 
 ![](dist/img/app_screenshot.png)
 
 
-### License
+#### License
 [MIT](https://choosealicense.com/licenses/mit/)
