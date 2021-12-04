@@ -6,6 +6,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 1rem;
+  color: #ffff;
 }
 #app {
   min-height: 580px;
@@ -15,7 +16,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
 }
 input {
   outline: none;
