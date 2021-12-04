@@ -34,14 +34,14 @@ const displayForecast = (forecast) => {
   <p>${forecast.weather[0].description}</p>
   </div>
   
-    <ul class="space-y-3 mt-3">
-      <li>Wind Speed:<span class="text-lg font-bold ml-2">${forecast.wind.speed}</span></li>
-      <li>Visibility:<span class="text-lg font-bold ml-2">${Math.round(forecast.visibility)}km</span></li>
-      <li>Feels Like:<span class="text-lg font-bold ml-2">${Math.round(forecast.main.feels_like)}&#x2103;</span></li>
-      <li>Pressure:<span class="text-lg font-bold ml-2">${forecast.main.pressure}</span></li>
-      <li>Humidity:<span class="text-lg font-bold ml-2">${forecast.main.humidity}&#x25;</span></li>
+    <ul class="space-y-3 mt-3 font-extrabold text-lg">
+      <li>Wind Speed:<span class="text-lg  ml-2">${forecast.wind.speed}</span></li>
+      <li>Visibility:<span class="ml-2">${Math.round(forecast.visibility)}km</span></li>
+      <li>Feels Like:<span class=" ml-2">${Math.round(forecast.main.feels_like)}&#x2103;</span></li>
+      <li>Pressure:<span class=" ml-2">${forecast.main.pressure}</span></li>
+      <li>Humidity:<span class=" ml-2">${forecast.main.humidity}&#x25;</span></li>
     </ul>
-    <p class="mt-6 font-light text-xs text-blue-700">Powered by Open Weather API</p>
+    <p class="mt-6 text-xs text-yellow-300">Powered by Open Weather API</p>
 </div>
         `
   content.innerHTML = htmlString;
