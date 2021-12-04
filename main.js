@@ -1,28 +1,28 @@
 import './style.css';
 
 const content = document.getElementById('content');
-const searchBar = document.getElementById('searchBar')
+const searchBar = document.getElementById('searchBar');
 let weatherData = [];
-
-searchBar.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
-    loadForecast(searchBar.value);
-  }
-
-})
 
 const loadForecast = async (city) => {
   try {
     const endpoint = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_API_TOKEN}`);
     weatherData = await endpoint.json();
+    // eslint-disable-next-line
     displayForecast(weatherData);
   } catch (err) {
     // eslint-disable-next-line
     console.error(err);
   }
-}
+};
 
-loadForecast('Lisabon')
+loadForecast('Lisabon');
+
+searchBar.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    loadForecast(searchBar.value);
+  }
+});
 
 const displayForecast = (forecast) => {
   const htmlString = `
@@ -42,7 +42,6 @@ const displayForecast = (forecast) => {
       <li>Humidity:<span class=" ml-2">${forecast.main.humidity}&#x25;</span></li>
     </ul>
     <p class="mt-6 text-xs text-yellow-300">Powered by Open Weather API</p>
-</div>
-        `
+</div>`;
   content.innerHTML = htmlString;
-}
+};
