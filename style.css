@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem;
+}
+#app {
+  min-height: 580px;
+  max-width: 340px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 5px rgb(238, 238, 238);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+input{
+  outline: none;
+  text-align: center;
+}
