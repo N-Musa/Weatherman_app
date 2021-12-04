@@ -10,8 +10,12 @@ body {
 #app {
   min-height: 580px;
   max-width: 340px;
-  border-radius: 20px;
   box-shadow: 3px 3px 5px 5px rgb(238, 238, 238);
+  background: url('asset/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 input {
   outline: none;
