@@ -16,3 +16,5 @@ node_modules/
 .env.local
 .env.development.local
 /.vscode
+# Local Netlify folder
+.netlify
