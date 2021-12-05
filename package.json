@@ -15,5 +15,8 @@
     "postcss-cli": "^9.0.2",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
   }
 }
