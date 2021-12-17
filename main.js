@@ -1,4 +1,4 @@
-import './style.css';
+import './global.css';
 import axios from 'axios';
 
 const content = document.getElementById('content');
